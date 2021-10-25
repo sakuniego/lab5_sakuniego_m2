@@ -44,7 +44,6 @@ public class MainActivity3 extends AppCompatActivity {
         if (noteid == -1){ // add note
             title = "NOTE_" + (MainActivity2.notes.size() + 1);
             dbHelper.saveNotes(username, title, content, date);
-            noteid = noteid + 1; // TODO REMOVE?
         } else {
             title = "NOTE_" + (noteid + 1);
             dbHelper.updateNote(title, date, content, username);
