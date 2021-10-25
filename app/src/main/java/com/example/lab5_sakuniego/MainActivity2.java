@@ -31,7 +31,7 @@ public class MainActivity2 extends AppCompatActivity {
                 goToActivity1();
                 break;
             case R.id.addNote:
-                // TODO: add something here
+                goToActivity3();
                 break;
             default:
                 break;
@@ -41,6 +41,11 @@ public class MainActivity2 extends AppCompatActivity {
 
     public void goToActivity1() {
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToActivity3() {
+        Intent intent = new Intent(this, MainActivity3.class);
         startActivity(intent);
     }
 
